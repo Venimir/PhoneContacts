@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PhoneContacts.ContactPage"
+             BackgroundColor="#323131"
+             Title="{Binding Name}">
+    <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+        <Label Text="Name" TextColor="White"/>
+        <Entry Text="{Binding Name}" BackgroundColor="White"/>
+
+        <Label Text="PhoneNumber"  TextColor="White"/>
+        <Entry Text="{Binding PhoneNumber}" BackgroundColor="White"/>
+
+        <Button Text="Save" x:Name="SaveButton" Clicked="SaveButton_Clicked" BackgroundColor="#08AD08" TextColor="White"/>
+        <Button Text="Delete" x:Name="DeleteButton" Clicked="DeleteButton_Clicked" BackgroundColor="#AF0303"  TextColor="White"/>
+        <Button Text="Cancel" x:Name="CancelButton" Clicked="CancelButton_Clicked" BackgroundColor="#787777"  TextColor="White"/>
+    </StackLayout>
+</ContentPage> 
